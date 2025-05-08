@@ -1,35 +1,64 @@
 * {
 	box-sizing: border-box;
 }
+
+html {
+	height: 100%;
+}
 body {
-	font-family: sans-serif;
+	min-height: 100%;
+}
+body {
+	/* System UI */
+	font-family: system-ui, sans-serif;
+	font-weight: normal;
 	background: #f4f4f4;
-	padding: 2rem;
+	padding: 2rlh;
 	text-align: left;
 	max-width: 700px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
+	gap: 1rlh;
 }
+footer {
+	margin-top: auto;
+	margin-bottom: 1rlh;
+	align-items: flex-end;
+	align-self: flex-end;
+	justify-self: flex-end;
+	font-size: 0.8rem;
+}
+
 #input {
 	width: 100%;
 	min-height: 60px;
-	margin-bottom: 1rem;
-	font-size: 1.2rem;
+	margin-bottom: 1rlh;
 	resize: vertical;
-	padding: 2rem;
+	padding: 1rlh;
+	font-size: 1.2rem;
 	border: 2px dashed #333;
 }
 
 .buttons {
 	display: flex;
 	justify-content: space-evenly;
-	gap: 0.5rem;
+	gap: 1rlh;
+	button {
+		flex: 1;
+		padding: 1rlh;
+		font-size: 1rem;
+		cursor: pointer;
+		border: 2px dashed #333;
+	}
+	button:hover {
+		background-color: #646464;
+		color: #f4f4f4;
+	}
 }
 #generate,
 #print {
-	padding: 0.5rem 1.5rem;
+	padding: 1rlh;
 	font-size: 1rem;
 	cursor: pointer;
 	flex: 1;
@@ -38,7 +67,7 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	background: #fff;
-	padding: 2rem;
+	padding: 1rlh;
 	min-height: 100px;
 	border: 2px dashed #333;
 	display: flex;
